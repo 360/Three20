@@ -440,6 +440,528 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		509B67FA12311FC900882642 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = Development;
+		};
+		509B67FB12311FC900882642 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+			};
+			name = Development;
+		};
+		509B67FC12311FC900882642 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PREBINDING = NO;
+			};
+			name = Development;
+		};
+		509B67FD12311FD100882642 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		509B67FE12311FD100882642 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		509B67FF12311FD100882642 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		509B680012311FDF00882642 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "App Store Distribution";
+		};
+		509B680112311FDF00882642 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+				ZERO_LINK = NO;
+			};
+			name = "App Store Distribution";
+		};
+		509B680212311FDF00882642 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = "App Store Distribution";
+		};
+		509B680312311FE900882642 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		509B680412311FE900882642 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		509B680512311FE900882642 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		509B680612311FE900882642 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		509B680712311FE900882642 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PREBINDING = NO;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		509B680812311FE900882642 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		509B680912311FFD00882642 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Development (QA Servers)";
+		};
+		509B680A12311FFD00882642 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		509B680B12311FFD00882642 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (QA Servers)";
+		};
+		509B680C12311FFD00882642 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		509B680D12311FFD00882642 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PREBINDING = NO;
+			};
+			name = "Development (QA Servers)";
+		};
+		509B680E12311FFD00882642 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		509B68151231201D00882642 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		509B68161231201D00882642 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		509B68171231201D00882642 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		509B68181231201D00882642 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		509B68191231201D00882642 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PREBINDING = NO;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		509B681A1231201D00882642 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		509B681B1231202600882642 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Development (Development Servers)";
+		};
+		509B681C1231202600882642 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.2;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
+		509B681D1231202600882642 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (Development Servers)";
+		};
+		509B681E1231202600882642 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
+		509B681F1231202600882642 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				PREBINDING = NO;
+			};
+			name = "Development (Development Servers)";
+		};
+		509B68201231202600882642 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB460A61183D2AC00685649 /* UnitTests.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
 		6E92493F112C6F4000531F03 /* Internal */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
@@ -459,13 +981,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
 			};
 			name = Internal;
 		};
@@ -488,11 +1017,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
 			};
 			name = Debug;
 		};
@@ -500,10 +1036,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+				VALID_ARCHS = armv6;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -574,6 +1117,17 @@
 				BEF31F3B0F352DF6000DE5D2 /* Debug */,
 				6E924940112C6F4000531F03 /* Internal */,
 				BEF31F3C0F352DF6000DE5D2 /* Release */,
+				509B67FB12311FC900882642 /* Development */,
+				509B67FE12311FD100882642 /* Ad-Hoc Distribution */,
+				509B680112311FDF00882642 /* App Store Distribution */,
+				509B680512311FE900882642 /* Development (Pre-Production Servers) */,
+				509B680612311FE900882642 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				509B680B12311FFD00882642 /* Development (QA Servers) */,
+				509B680C12311FFD00882642 /* Ad-Hoc Distribution (QA Servers) */,
+				509B68171231201D00882642 /* Development (QA Eller Servers) */,
+				509B68181231201D00882642 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				509B681D1231202600882642 /* Development (Development Servers) */,
+				509B681E1231202600882642 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -584,6 +1138,17 @@
 				C01FCF4F08A954540054247B /* Debug */,
 				6E92493F112C6F4000531F03 /* Internal */,
 				C01FCF5008A954540054247B /* Release */,
+				509B67FA12311FC900882642 /* Development */,
+				509B67FD12311FD100882642 /* Ad-Hoc Distribution */,
+				509B680012311FDF00882642 /* App Store Distribution */,
+				509B680312311FE900882642 /* Development (Pre-Production Servers) */,
+				509B680412311FE900882642 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				509B680912311FFD00882642 /* Development (QA Servers) */,
+				509B680A12311FFD00882642 /* Ad-Hoc Distribution (QA Servers) */,
+				509B68151231201D00882642 /* Development (QA Eller Servers) */,
+				509B68161231201D00882642 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				509B681B1231202600882642 /* Development (Development Servers) */,
+				509B681C1231202600882642 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -594,6 +1159,17 @@
 				EB9E6C6510B6A8F900DE563C /* Debug */,
 				6E924941112C6F4000531F03 /* Internal */,
 				EB9E6C6610B6A8F900DE563C /* Release */,
+				509B67FC12311FC900882642 /* Development */,
+				509B67FF12311FD100882642 /* Ad-Hoc Distribution */,
+				509B680212311FDF00882642 /* App Store Distribution */,
+				509B680712311FE900882642 /* Development (Pre-Production Servers) */,
+				509B680812311FE900882642 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				509B680D12311FFD00882642 /* Development (QA Servers) */,
+				509B680E12311FFD00882642 /* Ad-Hoc Distribution (QA Servers) */,
+				509B68191231201D00882642 /* Development (QA Eller Servers) */,
+				509B681A1231201D00882642 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				509B681F1231202600882642 /* Development (Development Servers) */,
+				509B68201231202600882642 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
